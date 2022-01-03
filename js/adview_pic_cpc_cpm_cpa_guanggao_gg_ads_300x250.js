@@ -1,0 +1,1 @@
+var killads = true;
