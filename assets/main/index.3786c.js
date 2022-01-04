@@ -476,7 +476,7 @@ window.__require = function e(t, a, i) {
                             s = 200 * this.SizeScale * this.carmeraNode.getChildByName("MoveCamera").getComponent(cc.Camera).zoomRatio;
                         (n.x > this.maxCameraMovePosX - s || n.x < -this.maxCameraMovePosX + s || n.y > this.maxCameraMovePosY - s || n.y < -this.maxCameraMovePosY + s) && (this.leafNode.children[t].opacity = 180)
                     }
-                    this.myFish = this.playerNode.getChildByName("kedou"), this.CreateEnemy(60), this.waterCount = 0, this.randnum = 10, this.angle = 0, this.rotSpeed = 1500, this.addSpeed = 165, this.maxTypeID = 1, this.canTouchReplay = !1;
+                    this.myFish = this.playerNode.getChildByName("kedou"), this.CreateEnemy(60), this.waterCount = 0, this.randnum = 10, this.angle = 0, this.rotSpeed = 1500, this.addSpeed = 65, this.maxTypeID = 1, this.canTouchReplay = !1;
                     for (var c = 0; c < 9; c++) {
                         var r = this.playerNode.children[c].scaleX;
                         this.fishScaleX.push(r)
