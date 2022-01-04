@@ -1925,7 +1925,7 @@ window.__require = function e(t, a, i) {
                 addClickBtns: function() {
                     var e = this;
                     e.moreBtn.node.on(cc.Node.EventType.TOUCH_START, function() {}), e.moreBtn.node.on(cc.Node.EventType.TOUCH_END, function() {
-                        console.log("MoreGame"), window.location.href = "https://www.thac.cc/game/"
+                        console.log("MoreGame"), window.location.href = o.moreGameUrl
                     }), e.leftBtn.node.on(cc.Node.EventType.TOUCH_START, function() {}), e.leftBtn.node.on(cc.Node.EventType.TOUCH_END, function() {
                         e.canTouchReplay && (cc.eventManager.removeAllListeners(), i.GAME_OVER_BOOL = !0, i.gameScore = 0, i.publicGameBool || adBreak({
                             type: "next",
