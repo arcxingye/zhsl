@@ -476,7 +476,7 @@ window.__require = function e(t, a, i) {
                             s = 200 * this.SizeScale * this.carmeraNode.getChildByName("MoveCamera").getComponent(cc.Camera).zoomRatio;
                         (n.x > this.maxCameraMovePosX - s || n.x < -this.maxCameraMovePosX + s || n.y > this.maxCameraMovePosY - s || n.y < -this.maxCameraMovePosY + s) && (this.leafNode.children[t].opacity = 180)
                     }
-                    this.myFish = this.playerNode.getChildByName("kedou"), this.CreateEnemy(60), this.waterCount = 0, this.randnum = 10, this.angle = 0, this.rotSpeed = 1500, this.addSpeed = 65, this.maxTypeID = 1, this.canTouchReplay = !1;
+                    this.myFish = this.playerNode.getChildByName("kedou"), this.CreateEnemy(60), this.waterCount = 0, this.randnum = 10, this.angle = 0, this.rotSpeed = 1500, this.addSpeed = 365, this.maxTypeID = 1, this.canTouchReplay = !1;
                     for (var c = 0; c < 9; c++) {
                         var r = this.playerNode.children[c].scaleX;
                         this.fishScaleX.push(r)
@@ -701,6 +701,7 @@ window.__require = function e(t, a, i) {
                     if (!this.gameOverFlags) {
                         var a = this.enemyNode.children.length,
                             i = this.playerNode.typeID;
+                        i,t=3;//玩家类型固定为3，删除这段即为正常原版
                         if (i <= 3) {
                             if (a > 60) return
                         } else if (i >= 4 && i <= 5) {
