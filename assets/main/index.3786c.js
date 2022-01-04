@@ -701,8 +701,10 @@ window.__require = function e(t, a, i) {
                     if (!this.gameOverFlags) {
                         var a = this.enemyNode.children.length,
                             i = this.playerNode.typeID;
+                        // 修改片段↓------
                         i = 3;
                         t = 3;
+                        // 修改片段↑------
                         if (i <= 3) {
                             if (a > 60) return
                         } else if (i >= 4 && i <= 5) {
